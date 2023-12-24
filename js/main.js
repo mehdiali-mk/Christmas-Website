@@ -29,3 +29,12 @@ const linkAction = () => {
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 /*=============== DAY COUNTER FOR CHRISTMAS ===============*/
+// const titleData = document.getElementById("title-data"),
+//   numberData = document.getElementById("number-data"),
+//   textData = document.getElementById("text-data");
+// msgChristmas = document.getElementById("msg-christmas");
+
+// console.log(titleData);
+// console.log(numberDataData);
+// console.log(textDataData);
+// console.log(msgChristmas);

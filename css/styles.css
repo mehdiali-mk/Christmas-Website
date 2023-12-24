@@ -95,7 +95,7 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: var(--first-color-dark);
+  background-color: transparent;
   z-index: var(--z-fixed);
 }
 
@@ -302,6 +302,138 @@ img {
 }
 
 /*=============== HOME ===============*/
+
+.home {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.home__container {
+  position: relative;
+  padding-block: 5.5rem 3rem;
+  display: grid;
+  row-gap: 6rem;
+}
+
+.home__image {
+  width: 300px;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform-origin: top;
+  justify-self: center;
+}
+
+.home__data {
+  text-align: center;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  color: var(--title-color);
+  margin-bottom: 1rem;
+}
+
+.home__text,
+.home__number {
+  display: inline-grid;
+}
+
+.home__number {
+  position: relative;
+  place-items: center;
+  margin-left: 0.75rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: var(--first-color-darker);
+  font-size: var(--h2-font-size);
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
+}
+
+.home__number::after {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border: 10px solid var(--first-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.home__description {
+  margin-bottom: 2rem;
+  color: var(--title-color);
+}
+
+.home__bell,
+.home__star {
+  position: absolute;
+}
+
+.home__bell {
+  width: 50px;
+  top: 14rem;
+  right: 1.25rem;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.home__star {
+  width: 60px;
+  bottom: 17rem;
+  left: -3rem;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+}
+
+.home__blob {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background-color: var(--first-color-dark);
+  border-radius: 4rem;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  left: -23rem;
+  top: 6rem;
+  z-index: -1;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
